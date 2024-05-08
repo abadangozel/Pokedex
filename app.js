@@ -34,10 +34,9 @@ const bg_color = {
     //console.log(pokemonName)
 
     pokemonNames.forEach((pokemonName) => {
+        pokemonName.parentElement.parentElement.style.display = 'block'
         if (!pokemonName.innerHTML.toLowerCase().includes(searchValue)) {
-          pokemonName.parentElement.parentElement.style.display = 'block'
-        } else {
-            pokemonName.parentElement.parentElement.style.display = 'none'
+          pokemonName.parentElement.parentElement.style.display = 'none'
         }
 
     })
